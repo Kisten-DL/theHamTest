@@ -3,6 +3,57 @@
 	background-image: url(../img/backgroundAbout.jpg);
 }
 
+.work{
+	height: 1212px;
+	background-color: rgba(248,252,254,1);
+	border:1px solid;
+	border-color: rgba(225,225,225,1);
+}
+
+.service{
+	height: 573px;
+}
+
+.purchase{
+	height: 475px;
+	background-image: url(../img/purchase.jpg);
+}
+
+.news{
+	height: 962px;
+}
+
+.fact{
+	height: 375px;
+}
+
+.pricing{
+	height: 935px;
+}
+
+.client{
+	height: 852px;
+	background-image: url(../img/client.jpg);
+}
+
+.team{
+	height: 705px;
+}
+
+.purchases{
+	height: 925px;
+	background-image: url(../img/purchases.jpg);
+}
+
+.contact{
+	height: 805px;
+}
+
+.footer{
+	height: 865px;
+	background-color: rgba(28,43,51,1);
+}
+
 .btn-home-tq{
 	border-color: rgba(24,207,171,1);
 	width: 100%; 
