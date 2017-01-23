@@ -23,10 +23,6 @@
 	height: 962px;
 }
 
-.fact{
-	height: 375px;
-}
-
 .pricing{
 	height: 935px;
 }
@@ -97,10 +93,6 @@
     border-top: 10px solid rgba(24,207,171,1); /* Добавляем треугольник */
 }
 
-.purchase>.row>.col-xs-12{
-	
-}
-
 .btn-container-home{
 	border-top: 4px solid;
 	border-top-color: rgba(255,255,255,1);
@@ -114,7 +106,45 @@
 	flex-wrap: wrap;
 	align-items: center;
 	min-height: 40%; 
+}
 
+.fact-curcle-outside{
+	border: 1px solid;
+	text-align: center;
+	border-radius:50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 8%;
+}
+
+.fact-curcle-outside-tq{
+	border-color: rgba(24,207,171,1);
+}
+
+.fact-curcle-outside-blue{
+	border-color: rgb(37,51,60);
+}
+
+.fact-curcle-inside{
+	padding:35%;
+	border-radius:50%;
+}
+
+.fact-curcle-inside-tq{
+	background-color: rgba(24,207,171,1);
+}
+
+.fact-curcle-inside-blue{
+	background-color: rgb(37,51,60);
+}
+
+.img-fact-con{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top:16%;
 }
 
 .text-home{
@@ -202,6 +232,11 @@
 	justify-content: space-between;
 }
 
+.thumbnail-news{
+	border-radius: 0px;
+	padding: 0px;
+}
+
 .container-features>.row>.left{
 padding-left: 30px;
 padding-right: 30px;
@@ -266,6 +301,10 @@ padding-right: 15px;
 	flex-direction:row;
 	align-items:center;
 	text-align: left;
+}
+
+.tq-background{
+	background-color: rgba(27,201,171,1) !important;
 }
 
 .ftr-head{
@@ -364,6 +403,20 @@ padding-right: 15px;
 	margin-right: 35%;
 }
 
+.fact-blue{
+	background-color: rgba(37,51,60,1);
+	height: 100%;
+	border-top: 7px solid;
+	border-color: rgba(24,207,171,1);
+}
+
+.fact-tq{
+	background-color: rgba(24,207,171,1);
+	height: 100%;
+	border-top: 7px solid;
+	border-color: rgba(37,51,60,1);
+}
+
 .fluid-options>.row{
 	display: flex;
 }
@@ -423,6 +476,48 @@ body>.navbar {
 
 .header-row>.col-lg-1{
 	height: 100;
+}
+
+.btn-buy{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 5% 10%;
+	background-color: rgb(46,74,91);
+	color: rgb(255,255,255);
+}
+
+.table-price{
+	background-color: rgb(248,252,254);
+	color: rgb(119,119,119);
+}
+
+#table-price-tq{
+	position: absolute;
+	z-index: 1000;
+	box-shadow: 0 0 10px 2px  rgba(0,0,0,0.3);
+}
+
+.img-offer{
+	height: 9%;
+    width: auto;
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+
+.table-price-col{
+	padding: 0px !important;
+}
+
+.div-price{
+	background-color: rgb(46,74,91);
+	color: rgb(255,255,255);
+	padding: 5%;	
+}
+
+.td-price{
+	padding: 0px !important;
+	padding-bottom: 8px !important;
 }
 
 .navbar-brand{
@@ -550,6 +645,55 @@ body>.navbar {
 	}
 }
 
+@media (max-width: 992px) {
+	.thumbnail-news>.date-div{
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 992px) {
+	.row>.col-xs-12>.head{
+		font-size: 18px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.thumbnail-news>.date-div{
+		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.font-dol{
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.table-price{
+		font-size: 11px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.btn-buy{
+		font-size: 11px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.table-price>tbody>tr>td{
+		padding-left: 4px;
+		padding-right: 4px;
+	}
+}
+
+@media (max-width: 768px) {
+	.table-price>thead>tr>th{
+		font-size: 12px !important;
+	}
+}
+
 .licontent:hover{
 	border-bottom: 2px solid;
 	border-color: rgba(24,207,171,1);
@@ -571,6 +715,13 @@ body>.navbar {
 	color: rgb(0,0,0);
 }
 
+.thumbnail-news:hover .date-div{
+	background-color: rgba(24,207,171,1) !important; 
+}
+
+.thumbnail-news>.caption>p>a:hover{
+	color: rgba(24,207,171,1) !important;
+}
 
 .fl-about{
 	padding-left: 0px !important;
