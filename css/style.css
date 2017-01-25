@@ -43,6 +43,8 @@
 
 .contact{
 	height: 805px;
+	padding: 6.4% 0;
+	position: relative;
 }
 
 .footer{
@@ -100,6 +102,105 @@
 	border-radius: 5px;
 }
 
+.btn-container-contact{
+	border-bottom: 4px solid;
+	border-bottom-color: rgba(8,191,155,1);
+	background-color: rgba(8,191,155,1);
+	border-radius: 5px;
+}
+
+.contact>.container{
+	height: 100%;
+}
+
+.btn-footer-tags{
+	border-radius: 0px;
+	margin-bottom: 5px;
+	background-color: transparent;
+	border: 1px solid;
+}
+
+
+.footer-media-img{
+	height: 64px;
+	width: 64px;
+}
+
+.footer-head{
+	color: rgb(255,255,255);
+	font-size: 18px;
+}
+
+.footer>.container{
+	padding-top: 6.7%; 
+}
+
+.footer-logo{
+	color: rgb(255,255,255);
+	font-size: 40px;
+}
+
+.footer>.container>.row{
+	color: rgb(178,178,178);
+}
+
+.footer-office{
+	margin-top: 43%;
+}
+
+.footer-phone{
+	margin-top:40px;
+}
+
+.contact>.container>.row{
+	height: 100%;
+	position:relative;
+}
+
+.footer>.container>.row>.col-xs-4>.media{
+	padding: 10% 0;
+}
+
+.footer>.container>.row>.col-xs-4>.media>.media-body>p{
+	margin-left: 5px;
+}
+
+.footer>.container>.row>.col-xs-4>.media>.media-body>.footer-madia-data{
+	margin-left: 0px;
+	color: rgb(255,255,255);
+}
+
+.footer>.container>.row>.col-xs-4>.media>.media-body>a>h4{
+	margin-left: 5px;
+}
+
+.footer-media-a{
+	color: rgb(255,255,255);
+}
+
+.footer>.container>.row>.col-xs-4>.media-main{
+	padding: 10% 0;
+	border-bottom: 1px solid;
+	border-color: rgb(41,68,83);
+}
+
+.contact-form{
+	display: table-footer-group;
+}
+
+.inp-contact{
+	height: 54px;
+}
+
+.contact>.container>.row>.col-xs-6{
+	height: 100%;
+	display:table;
+}
+
+.form-control{
+	border-radius: 0px;
+}
+
 .home>.row-button-home{
 	display: flex;
 	flex-direction: row;
@@ -147,11 +248,46 @@
 	margin-top:16%;
 }
 
+.tags{
+	padding-bottom: 35px;
+	border-bottom: 1px solid;
+	border-color: rgb(41,68,83);
+}
+
 .text-home{
 	height: 50%;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+}
+
+.footer-newsletter{
+	padding-top: 35px;
+}
+
+.footer-newsletter>.footer-head{
+	padding-bottom: 15px;
+}
+
+.footer-newsletter>div>input{
+	background-color: rgb(34,53,63);
+	border:0px;
+}
+
+.footer-newsletter>div>div>button{
+	border-radius: 0px;
+	border:0px;
+	background-color: rgb(41,68,83);
+	color: rgb(24,207,171);
+}
+
+.footer-newsletter>div>div{
+	background-color: rgb(41,68,83);
+}
+
+
+.flickeFeed>.row{
+padding: 15px 0;
 }
 
 .progress{
@@ -321,6 +457,24 @@ padding-right: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.footer-footer{
+	padding: 2% 0;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	background-color:rgb(34,53,63);
+}
+
+.map{
+	padding: 6.4% 0;
+	padding-right: 15px;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	height: 100%;
+	width: 50%;
 }
 
 .plus-div{
@@ -915,6 +1069,23 @@ body>.navbar {
 
 .thumbnail-team:hover .caption>p{
 	color: rgb(46,74,91) ; 
+}
+
+.footer-media-a:hover {
+	text-decoration: none;
+	color: rgb(24,207,171) ; 
+}
+
+.footer-newsletter>div>div>button:hover {
+	background-color: rgb(24,207,171);
+	color: rgb(255,255,255);
+}
+
+.btn-footer-tags:hover{
+	background-color: rgb(24,207,171);
+	border: 1px solid;
+	border-color: rgb(24,207,171);
+	color: rgb(255,255,255);
 }
 
 .thumbnail-team:hover .team-div-head{
