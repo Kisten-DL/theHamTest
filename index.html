@@ -8,6 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
     <title>theHam</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -58,17 +59,27 @@
         <div class="row row-button-home">
           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 col-sm-offset-2 col-md-offset-4">
             <div class="btn-container-home">
-              <button type="button" class="btn btn-default btn-home-tq"><strong>Explore Now</strong></button>
+              <button type="button" class="btn btn-default btn-home-tq tq-background"><strong>Explore Now</strong></button>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2 ">
             <div class="btn-container-home">
-              <button type="button" class="btn btn-default btn-home-bl"><strong>Purchase Now</strong></button>
+              <button type="button" class="btn btn-default btn-home-bl cyan-background"><strong>Purchase Now</strong></button>
             </div>
           </div>
         </div>
       </div> 
-      <div></div>
+      <div class="home-menu hidden-xs">
+        <img src="img/backgroundHome.jpg" class="img-responsive img-menu-home">
+        <div class="home-btn-group">
+          <button class="btn btn-default pull-left btn-home-menu">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </button>
+          <button class="btn btn-default pull-right btn-home-menu">
+            <span class="glyphicon glyphicon-chevron-right "></span>
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="container-fluid fluid-options">
@@ -185,7 +196,8 @@
         </div>
     </div>
 
-    <div class="container-fluid about-company" id="about">
+    <div class="container-fluid about-company" id="about" style="position: relative;">
+      <img src="img/ham1.png" class="img-ham1 hidden-xs hidden-sm">
       <div class="container">
         <div class="row">
           <div class="col-md-offset-6 col-md-6">
@@ -249,24 +261,42 @@
         </div>
         <div class="row">
           <div class="col-xs-12 navbarWork">
-            <nav aria-label="Page navigation">
+            <nav aria-label="Page navigation" class="hidden-xs">
               <ul class="pagination">
                 <li></li>
                 <li><a href="#" class="active"><strong>All</strong></a></li>
-                <li><a href="#"><strong>Graphic Desing</strong></a></li>
-                <li><a href="#"><strong>Web Desing</strong></a></li>
-                <li><a href="#"><strong>Landing Pages</strong></a></li>
-                <li><a href="#"><strong>WordPress</strong></a></li>
+                <li><a href="#" class="hidden-xs"><strong>Graphic Desing</strong></a></li>
+                <li><a href="#" class="hidden-xs"><strong>Web Desing</strong></a></li>
+                <li><a href="#" class="hidden-xs"><strong>Landing Pages</strong></a></li>
+                <li><a href="#" class="hidden-xs"><strong>WordPress</strong></a></li>
                 <li>
                 </li>
               </ul>
             </nav>
+            <div class="btn-group hidden-sm hidden-md hidden-lg">
+              <button type="button " class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>All</strong><span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a href="#"><strong>All</strong></a></li>
+                <li><a href="#"><strong>Graphic Desing</strong></a></li>
+                <li><a href="#"><strong>Web Desing</strong></a></li>
+                <li><a href="#"><strong>Landing Pages</strong></a></li>
+                <li><a href="#"><strong>WordPress</strong></a></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 workRow1">
             <div class="col-xs-3 workwork workbtn-group">
-                <p style="color: rgba(24,207,171,1)"><strong>Creative Desing</strong></p>
+                <div>
+                  <a href=""><i class="fa fa-link fa-rotate-90" aria-hidden="true"></i></a>
+                </div>
+                <div>
+                  <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <p style="color: rgba(24,207,171,1)" class="hidden-xs"><strong>Creative Desing</strong></p>
                 <p style="color: rgb(138,138,138);">Web Desing</p>
             </div>
             <div class="col-xs-3 workwork"><img src="img/backgroundHome.jpg" class="img-responsive"></div>
@@ -314,18 +344,19 @@
       <div class="row">
         <div class="col-xs-12 center">
           <div class="btn-group btn-group-justified">
-            <a type="button" class="btn btn-default activ " style="border-radius: 0px; border:0px;"><strong>Web Desing</strong></a>
+            <a type="button" class="btn btn-default hidden-sm hidden-xs activ" style="border-radius: 0px; border:0px;"><strong>Web Desing</strong></a>
             <a type="button" class="btn btn-default hidden-sm hidden-xs"><strong>Graphic Desing</strong></a>
             <a type="button" class="btn btn-default hidden-sm hidden-xs"><strong>Online Support</strong></a>
             <a type="button" class="btn btn-default hidden-sm hidden-xs"><strong>App Desing</strong></a>
             <a type="button" class="btn btn-default hidden-sm hidden-xs"><strong>Online Marketing</strong></a>
             <a type="button" class="btn btn-default hidden-sm hidden-xs" style="border-radius: 0px;"><strong>SEO Service</strong></a>
             <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle hidden-lg hidden-md" data-toggle="dropdown" style="border-radius: 0px;">
-                  <strong>Other</strong>
+              <button type="button" class="btn btn-default dropdown-toggle hidden-lg hidden-md activ" data-toggle="dropdown" style="border-radius: 0px;">
+                  <strong>Web Desing</strong>
                   <span class="caret"></span>
                 </button>
               <ul class="dropdown-menu" style="width: 100%; background-color: rgba(0,0,0,0.6);">
+                <li><a href="#"><strong>Web Desing</strong></a></li>
                 <li><a href="#"><strong>Graphic Desing</strong></a></li>
                 <li><a href="#"><strong>Online Support</strong></a></li>
                 <li><a href="#"><strong>App Desing</strong></a></li>
@@ -361,7 +392,7 @@
           <div class="clearfix"></div>
           <div class="col-sm-4 col-md-2 col-sm-offset-4 col-md-offset-5">
               <div class="btn-container-home">
-                <button type="button" class="btn btn-default btn-home-tq"><strong>Purchase Now</strong></button>
+                <button type="button" class="btn btn-default btn-home-tq tq-background"><strong>Purchase Now</strong></button>
               </div>
           </div>
         </div>
@@ -619,7 +650,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <button class="btn btn-default btn-buy"><strong>BUY NOW</strong></button>
+                      <button class="btn btn-default btn-buy blue-background"><strong>BUY NOW</strong></button>
                     </td>
                   </tr>
                 </tbody>
@@ -659,7 +690,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <button class="btn btn-default btn-buy"><strong>BUY NOW</strong></button>
+                      <button class="btn btn-default btn-buy blue-background"><strong>BUY NOW</strong></button>
                     </td>
                   </tr>
                 </tbody>
@@ -741,7 +772,7 @@
                   </tr>
                   <tr>
                     <td>
-                      <button class="btn btn-default btn-buy"><strong>BUY NOW</strong></button>
+                      <button class="btn btn-default btn-buy blue-background"><strong>BUY NOW</strong></button>
                     </td>
                   </tr>
                 </tbody>
@@ -1013,7 +1044,8 @@
       </div>
     </div>
 
-    <div class="container-fluid purchases">
+    <div class="container-fluid purchases" style="position: relative;">
+      <img src="img/ham2.png" class="img-ham2 hidden-xs">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center" style="margin-top: 11%;">
@@ -1085,7 +1117,7 @@
         <div class="row">
           <div class="col-xs-6 col-xs-offset-6">
             <div class="row">
-              <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6">
+              <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6" style="margin-bottom: 100px;">
                 <p class="first-p"><strong style="color: rgb(78,78,78);">Keep In Touch</strong></p>
                 <img src="img/title.png" class="center-block">
               </div>
@@ -1112,7 +1144,7 @@
     <div class="footer" style="position: relative;">
       <div class="container">
         <div class="row">
-          <div class="col-xs-3">
+          <div class="col-xs-6 col-sm-3">
             <p class="footer-logo">the<font style="color: rgb(24,207,171)"><strong>Ham</strong></font></p>
             <p>Lorem ipsum dolor sit amet, con is sectetur adipiscing elit.Lorem ipsum dolor sit amet, con is sectetur adipiscing elit.  </p>
             <p class="footer-office"><strong>Office:</strong></p>
@@ -1122,46 +1154,7 @@
             <p><strong>Fax: </strong>(91) 11 4752 1433</p>
             <p><strong>Email: </strong>info@canvas.com</p>
           </div>
-          <div class="col-xs-4">
-            <p class="footer-head"><strong>RECENT POST</strong></p>
-            <div class="media media-main">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
-                  <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
-                  <p class="footer-madia-data">10 March, 2015</p>
-                </div>
-            </div>
-            <div class="media media-main">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
-                  <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
-                  <p class="footer-madia-data">10 March, 2015</p>
-                </div>
-            </div>
-            <div class="media media-last">
-                <div class="media-left">
-                  <a href="#">
-                    <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
-                  </a>
-                </div>
-                <div class="media-body">
-                  <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
-                  <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
-                  <p class="footer-madia-data">10 March, 2015</p>
-                </div>
-            </div>
-          </div>
-          <div class="col-xs-3">
+          <div class="col-xs-6 col-sm-3 col-sm-push-4">
             <div class="row">
               <div class="col-xs-12 tags">
                 <p class="footer-head"><strong>TAGS</strong></p>
@@ -1208,32 +1201,87 @@
               </div>
             </div>
           </div>
-          <div class="col-xs-2 flickeFeed">
+          <div class="col-xs-12 col-sm-4 col-sm-pull-3">
+            <p class="footer-head"><strong>RECENT POST</strong></p>
+            <div class="row">
+              <div class="col-xs-4 col-sm-12">
+                <div class="media media-main">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
+                      <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
+                      <p class="footer-madia-data">10 March, 2015</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-12">
+                <div class="media media-main">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
+                      <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
+                      <p class="footer-madia-data">10 March, 2015</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-xs-4 col-sm-12">
+                <div class="media media-main">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object footer-media-img" src="img/peaple1.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <a href="#" class="footer-media-a"><h4 class="media-heading"><strong>Media heading</strong></h4></a>
+                      <p>Lorem ipsum dolor sit amet, con   sectetur adip is lisicing eli</p>
+                      <p class="footer-madia-data">10 March, 2015</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-2 flickeFeed">
             <p class="footer-head"><strong>FLICKE FEED</strong></p>
-              <div class="row">
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
+            <div class="row">
+              <div class="col-xs-4 col-sm-12">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div> 
                 </div>
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
-                </div> 
               </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
+              <div class="col-xs-4 col-sm-12">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div> 
                 </div>
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
-                </div> 
               </div>
-              <div class="row">
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
+              <div class="col-xs-4 col-sm-12">
+                <div class="row">
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div>
+                  <div class="col-xs-6">
+                    <img src="img/backgroundHome.jpg" class="img-responsive">
+                  </div> 
                 </div>
-                <div class="col-xs-6">
-                  <img src="img/backgroundHome.jpg" class="img-responsive">
-                </div> 
               </div>
+            </div>
           </div>
         </div>
       </div>
