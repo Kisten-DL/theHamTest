@@ -1,48 +1,48 @@
 .about-company{
-	height: 678px;
+	padding: 100px 15px;
 	background-image: url(../img/backgroundAbout.jpg);
 }
 
 .work{
-	padding-bottom: 100px;
+	padding: 100px 15px;
 	background-color: rgba(248,252,254,1);
 	border:1px solid;
 	border-color: rgba(225,225,225,1);
 }
 
 .service{
-	height: 573px;
+	padding: 100px 15px;
 }
 
 .purchase{
-	height: 475px;
+	padding: 100px 15px;
 	background-image: url(../img/purchase.jpg);
 }
 
 .news{
-	padding-bottom: 100px;
+	padding: 100px 15px;
 }
 
 .pricing{
-	padding-bottom: 100px;
+	padding: 100px 15px;
 }
 
 .client{
-	height: 852px;
+	padding: 100px 15px;
 	background-image: url(../img/client.jpg);
 }
 
 .team{
-	height: 705px;
+	padding: 100px 15px;
 }
 
 .purchases{
-	height: 925px;
+	padding: 100px 15px;
 	background-image: url(../img/purchases.jpg);
 }
 
 .contact{
-	padding: 6.4% 0;
+	padding: 100px 0;
 	position: relative;
 }
 
@@ -134,6 +134,7 @@
 	border-top-color: rgba(255,255,255,1);
 	background-color: rgba(255,255,255,1);
 	border-radius: 5px;
+	height: 55px;
 }
 
 .btn-container-contact{
@@ -363,6 +364,7 @@ padding: 15px;
 
 .workbtn-group{
 	background-image: url(../img/bckWorkBtn.png);
+	background-repeat: no-repeat;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -433,7 +435,6 @@ padding: 15px;
 }
 
 .header-block-text{
-	padding-top: 100px;
 	padding-bottom: 20px;
 	text-align: center;
 }
@@ -541,7 +542,7 @@ padding-right: 30px;
 }
 
 .map{
-	padding: 6.4% 0;
+	padding: 100px 0;
 	padding-right: 15px;
 	position: absolute;
 	left: 0px;
@@ -929,8 +930,8 @@ body>.navbar {
 .col-lg-offset-5>.nav>li {
 	min-height: 121px;
 	height: 1px;
-	padding-left: 10px ;
-	padding-right: 10px;
+	padding-left: 8px ;
+	padding-right: 8px;
 	}
 
 .about-li{
@@ -1222,6 +1223,85 @@ body>.navbar {
 	.footer-media-img{
 		height: 32px;
 		width: 32px;
+	}
+}
+
+@media (max-width: 992px) {
+	.container-features{
+		padding-top: 50px;
+	}
+}
+
+@media (max-width: 992px) {
+	.about-company{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.work{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.service{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.purchase{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.fact>.row>.col-xs-3>.row>.col-xs-12>p{
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 992px) {
+	.news{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.pricing{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.client{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.team{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.purchases{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.contact{
+		padding: 50px 15px;
+	}
+}
+
+@media (max-width: 992px) {
+	.map{
+		padding: 50px 0;
+		padding-right: 15px;
 	}
 }
 
