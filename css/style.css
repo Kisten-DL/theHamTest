@@ -67,17 +67,20 @@
 	color: rgb(255,255,255);
 }
 
-.row>.center>.btn-group>.btn,.row>.center>.btn-group>.btn-group>.btn{
+.row>.center>.btn-group>ul>li>a,.row>.center>.btn-group>.btn-group>.btn{
 	color: rgb(122,122,122);
 	background-color: rgba(248,252,254,1);
 	height: 70px;
 }
 
+.row>.center>.btn-group>ul>li{
+	width: 16.6%;
+	margin: 0px;
+}
+
 .row>.center>.btn-group>.btn-group{
 	display: none;
 }
-
-.row>.center>.btn-group>.btn
 
 .dropdown-menu>li>a{
 	color: rgb(248,252,254);
@@ -103,25 +106,41 @@
 	margin-bottom: 25px;
 }
 
-.row>.center>.btn-group>.activ{
+.row>.center>.btn-group>ul>.active>a{
 	background-color: rgba(24,207,171,1);
 	color: rgb(255,255,255);
+	border-color: rgba(24,207,171,1);
 }
 
-.row>.center>.btn-group>.activ::after {
+.row>.center>.btn-group>ul>li>a{
+	border-radius: 0px;
+	padding-top: 15%;
+}
+
+.row>.center>.btn-group>ul>.active::after {
     content: ''; 
     position: relative; /* Абсолютное позиционирование */
-    left: -50px; bottom: -50px; /* Положение треугольника */
+    left: 40%; bottom: -8px; /* Положение треугольника */
     border: 10px solid transparent; /* Прозрачные границы */
     border-top: 10px solid rgba(24,207,171,1); /* Добавляем треугольник */
 }
 
-.row>.center>.btn-group>.btn-group>.activ{
+.dropdown>.dropdown-menu>.active>a{
+	background-color: rgb(24,207,171);
+}
+
+.row>.center>.btn-group>ul>.dropdown>.dropdown-toggle{
+	text-align: center;
+	padding-top: 25px;
+}
+
+
+.row>.center>.btn-group>.btn-group>.active{
 	background-color: rgba(24,207,171,1);
 	color: rgb(255,255,255);
 }
 
-.row>.center>.btn-group>.btn-group>.activ::after {
+.row>.center>.btn-group>.btn-group>.active::after {
     content: ''; 
     position: relative; /* Абсолютное позиционирование */
     left: -50px; bottom: -50px; /* Положение треугольника */
@@ -362,10 +381,19 @@ padding: 15px;
 	margin-bottom: 15px;
 }
 
+.work>.container>.row>.tab-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.work>.container>.content-row{
+	margin:0px;
+}
+
 .workbtn-group{
 	background-image: url(../img/bckWorkBtn.png);
 	background-repeat: no-repeat;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -519,7 +547,13 @@ padding-right: 30px;
 	color: rgb(113,113,113);
 	padding-top: 18px;
 	padding-bottom: 18px;
+	border-radius: 0px; 
 }
+
+.navbarWork>nav>.pagination>li{
+	margin: 0px;
+}
+
 
 .workwork{
 	padding-left: 0px !important;
@@ -574,12 +608,19 @@ padding-right: 30px;
 	justify-content: center;
 }
 
-.navbarWork>nav>.pagination>li>.active{
+.navbarWork>nav>.pagination>.active>a{
+	background-color: rgb(255,255,255);
+	border: 1px solid;
+	border-color: rgb(221,221,221);
 	color: rgb(24,207,171);
 	box-shadow: -1px -2px 0 -1px rgba(24,207,171,1),1px -2px 0 -1px rgba(24,207,171,1);
 }
 
 .navbarWork>.btn-group>.dropdown-menu{
+	background-color: rgba(0,0,0,0.6);
+}
+
+.dropdown-menu{
 	background-color: rgba(0,0,0,0.6);
 }
 
@@ -784,8 +825,7 @@ padding-right: 15px;
 body>.navbar {
     background-color: rgba(0, 0, 0, 0.6) ;
     border: 0px;
-    min-height: 120px;
-    height: 1px;
+    height: 120px;   
 }
 
 .fluid-home {
@@ -928,8 +968,7 @@ body>.navbar {
 }
 
 .col-lg-offset-5>.nav>li {
-	min-height: 121px;
-	height: 1px;
+	height: 121px;
 	padding-left: 8px ;
 	padding-right: 8px;
 	}
@@ -1117,7 +1156,7 @@ body>.navbar {
 }
 
 @media (max-width: 768px) {
-	.row>.center>.btn-group>.btn-group{
+	.row>.center>.btn-group>ul>.dropdown{
 		display: table-cell;
 	}
 }
@@ -1225,6 +1264,20 @@ body>.navbar {
 		width: 32px;
 	}
 }
+
+@media (max-width: 992px) {
+	.navbar>.container>.header-row>.navbar-collapse>ul>li{
+		height: 30px;
+		background-color: rgba(0,0,0,0.6);
+	}
+}
+
+@media (max-width: 992px) {
+	.navbar>.container>.header-row>.navbar-collapse>ul{
+		margin-top: 0px;
+	}
+}
+
 
 @media (max-width: 992px) {
 	.container-features{
@@ -1362,6 +1415,8 @@ body>.navbar {
 	color: rgb(24,207,171) ; 
 }
 
+
+
 .workbtn-group>div>a:hover i{
 	color: rgb(255,255,255);
 	background-color: rgb(24,207,171);
@@ -1379,7 +1434,7 @@ body>.navbar {
 	color: rgb(255,255,255);
 }
 
-.navbarWork>.btn-group>.dropdown-menu>li>a:hover {
+.navbarWork>.nav>ul>.dropdown>.dropdown-menu>li>a:hover {
 	background-color: transparent;
 	color: rgb(24,207,171);
 }
@@ -1392,11 +1447,19 @@ body>.navbar {
 	color: rgba(24,207,171,1) !important;
 }
 
-.row>.center>.btn-group>.btn:hover {
+.workwork:hover img{
+	display: none;
+}
+
+.workwork:hover .workbtn-group{
+	display: flex;
+}
+
+.row>.center>.btn-group>ul>li>a:hover {
 	color: rgb(24,207,171);
 }
 
-.row>.center>.btn-group>.activ:hover {
+.row>.center>.btn-group>ul>.active>a:hover {
 	color: rgb(255,255,255);
 }
 
