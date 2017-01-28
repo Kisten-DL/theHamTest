@@ -520,15 +520,32 @@ padding: 15px;
 	color: rgb(247,247,247);
 }
 
+.history-td-text{
+	color: rgb(190,190,190);
+}
+
 .table-purchase{
 	margin-top: 25%;
 }
+
+.table-history{
+	margin-top: 20px;
+}
+
 
 .table-purchase>tbody>tr>td{
 	border:0px;
 }
 
+.table-history>tbody>tr>td{
+	border:0px;
+}
+
 .table-purchase>tbody>tr>.img-td{
+	padding-left: 0px;
+}
+
+.table-history>tbody>tr>.img-td{
 	padding-left: 0px;
 }
 
@@ -981,6 +998,8 @@ body>.navbar {
 	padding-top: 10px !important;
 	background-color: rgba(0,0,0,0) !important;
 	color: rgba(255,255,255,1) !important;
+	border-radius: 0px;
+	border: 0px !important;
 }
 
 .navbarAbout>.navbar{
@@ -1000,9 +1019,15 @@ body>.navbar {
 }
 
 .active>.about-li {
-	border-top: 2px solid;
+	border-radius: 0px;
+	border: 0px !important;
+	border-top: 2px solid !important;
 	border-color: rgba(24,207,171,1);
 	color: rgba(24,207,171,1) !important;
+}
+
+.navbarAbout>.navbar>.nav{
+	border: 0px;
 }
 
 .active>.licontent {
@@ -1371,7 +1396,9 @@ body>.navbar {
 }
 
 .about-li:hover{
-	border-top: 2px solid;
+	border: 0px !important;
+	border-radius: 0px;
+	border-top: 2px solid !important;
 	border-color: rgba(24,207,171,1);
 	color: rgba(24,207,171,1) !important;
 }
